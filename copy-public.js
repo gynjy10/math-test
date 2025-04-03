@@ -10,3 +10,14 @@ fse.copy(src, dest)
     console.error('❌ 복사 실패:', err);
     process.exit(1);
   });
+
+  const fs = require('fs');
+
+const envContent = `
+window.env = {
+  FIREBASE_API_KEY: "${process.env.FIREBASE_API_KEY}",
+  AUTH_DOMAIN: "${process.env.AUTH_DOMAIN}"
+};
+`;
+
+fs.writeFileSync(path.join(dest, 'env.js'), envContent);

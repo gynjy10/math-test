@@ -2,4 +2,5 @@
 ".env" 
 "dist/" 
 "build/" 
-".vscode/" 
+".vscode/"
+"public/env.js"
