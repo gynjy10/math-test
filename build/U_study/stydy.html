@@ -147,16 +147,11 @@
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>    
     <!-- Firebase 초기화는 src 없이 별도 script에서 처리 -->
-    <script>
+    <script src="env.js">
         // firebaseConfig 객체 (API 키, 프로젝트 정보)
         const firebaseConfig = {
-            apiKey: "AIzaSyCsZw0HYxfXIKIkS4lizDt-w5qTGUxQ3EM",
-            authDomain: "mathproblemdb-9f42d.firebaseapp.com",
-            projectId: "mathproblemdb-9f42d",
-            storageBucket: "mathproblemdb-9f42d.firebasestorage.app",
-            messagingSenderId: "942043668686",
-            appId: "1:942043668686:web:fd0d802897aea5e061b09f",
-            measurementId: "G-5LQXWT8X91"
+            apiKey: window.env.FIREBASE_API_KEY,
+            authDomain: window.env.AUTH_DOMAIN
         };
         // Firebase 초기화 (한 번만 호출)
         firebase.initializeApp(firebaseConfig);
