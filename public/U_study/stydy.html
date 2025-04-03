@@ -152,7 +152,8 @@
         // firebaseConfig 객체 (API 키, 프로젝트 정보)
         const firebaseConfig = {
             apiKey: window.env.FIREBASE_API_KEY,
-            authDomain: window.env.AUTH_DOMAIN
+            authDomain: window.env.AUTH_DOMAIN,
+            projectId: "mathproblemdb-9f42d"
         };
         // Firebase 초기화 (한 번만 호출)
         firebase.initializeApp(firebaseConfig);
