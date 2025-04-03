@@ -1,7 +1,5 @@
-// copy-public.js
-const fs = require('fs');
-const path = require('path');
 const fse = require('fs-extra');
+const path = require('path');
 
 const src = path.join(__dirname, 'public');
 const dest = path.join(__dirname, 'build');
