@@ -6,14 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "npx copyfiles -u 1 public/**/* build"
+    "build": "node copy-public.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.0"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1"
