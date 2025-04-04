@@ -1,13 +1,5 @@
-// 세로방향 기본형 프레임
-
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
 // study 메인프레임
+
 .main-top {
   display: flex;
   align-items: center;
@@ -171,7 +163,6 @@ fieldset {
 //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 //   overflow: hidden;
 // }
-
 
 
 // 개별 문제 스타일
