@@ -24,25 +24,33 @@ body {
   align-items: center;
   padding: 0 20px;
 }
-
-span a {
+.head-frame #logo {
+  display: flex;
+  align-items: center;
+}
+.head-frame #logo #logoimg {
+  width: 40px;
+  height: 30px;
+  margin: 5px;
+}
+.head-frame a {
   text-decoration: none;
   font-size: 17px;
 }
-span a:not(:has(i)) {
+.head-frame a:not(:has(i)) {
   color: green;
   border: solid 2px transparent;
   border-radius: 8px;
   padding: 3px;
 }
-span a:not(:has(i)):hover {
+.head-frame a:not(:has(i)):hover {
   color: orangered;
   border-color: black;
 }
-span a:not(:has(i)):active {
+.head-frame a:not(:has(i)):active {
   color: gray;
 }
-span a i {
+.head-frame a i {
   font-size: 24px;
   color: darkorchid;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -50,21 +58,21 @@ span a i {
   align-items: center;
   justify-content: center;
 }
-span a .hover-icon {
+.head-frame a .hover-icon {
   display: none;
 }
-span a:hover .default-icon {
+.head-frame a:hover .default-icon {
   display: none;
 }
-span a:hover .hover-icon {
+.head-frame a:hover .hover-icon {
   display: inline-flex;
   transform: scale(1.2);
   color: darkcyan;
 }
-span a:active .default-icon {
+.head-frame a:active .default-icon {
   display: none;
 }
-span a:active .hover-icon {
+.head-frame a:active .hover-icon {
   display: inline-flex;
   transform: scale(1.2);
 }
