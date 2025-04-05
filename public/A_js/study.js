@@ -384,6 +384,11 @@ document.addEventListener("DOMContentLoaded", function() {
     typeRadios.forEach(radio => {
       radio.addEventListener("change", function() {
         diffCheckboxes.forEach(chk => {
+          // 만약 value가 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 'p' 또는 'x' 계속  disabled 유지
+          if (chk.value === 'p' || chk.value === 'x') {
+            return;
+          }
+          // 나머지 항목은 활성화
           chk.disabled = false;
           chk.checked = false; // 새 라디오 선택 시 기존 체크값 초기화
         });
@@ -487,7 +492,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     // 중간 점검 확인용 console
-    console.log("과정코드:", courseCodes, "문제코드:", problemCodes, "문항수:", questionCount);
+    // console.log("과정코드:", courseCodes, "문제코드:", problemCodes, "문항수:", questionCount);
 
     // 7-2. 입력값 부족여부 확인
     if (needsCourse && !needsProblem) {
