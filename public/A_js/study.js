@@ -384,8 +384,8 @@ document.addEventListener("DOMContentLoaded", function() {
     typeRadios.forEach(radio => {
       radio.addEventListener("change", function() {
         diffCheckboxes.forEach(chk => {
-          // 만약 value가 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 'p' 또는 'x' 계속  disabled 유지
-          if (chk.value === 'p' || chk.value === 'x') {
+          // 만약 value가 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 'x' 계속  disabled 유지
+          if (chk.value === 'x') {
             return;
           }
           // 나머지 항목은 활성화

@@ -204,4 +204,123 @@ fieldset.selected {
 ::selection {
   background: yellow;
   color: red;
+}
+
+.table-row {
+  border-collapse: collapse; /* 테두리 겹치기 제거 */
+  border: 2px solid;
+}
+.table-row td {
+  width: 60px;
+  height: 36px;
+  border: 1px solid; /* 셀 테두리 */
+  padding: 5px; /* 셀 안 여백 */
+  box-sizing: border-box; /* 가로세로사이즈 왜곡제거! */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  white-space: nowrap; /* 추가! 텍스트 줄바꿈 금지 */
+}
+.table-row .top {
+  border-bottom: 2px solid;
+}
+
+.table-column {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+.table-column td {
+  width: 60px;
+  height: 36px;
+  border: 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+.table-column .left {
+  border-right: 2px solid;
+}
+
+.table-columnopen {
+  display: inline-block;
+  border-collapse: collapse;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.table-columnopen td {
+  width: 36px;
+  height: 36px;
+  border: 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+.table-columnopen .topleft {
+  border-bottom: 2px solid;
+  border-left: none;
+  border-right: 2px solid;
+}
+.table-columnopen .top {
+  border-bottom: 2px solid;
+}
+.table-columnopen .topright {
+  border-bottom: 2px solid;
+  border-right: none;
+}
+.table-columnopen .left {
+  border-left: none;
+  border-right: 2px solid;
+}
+.table-columnopen .right {
+  border-right: none;
+}
+
+.table-R1 {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+.table-R1 td {
+  width: 36px;
+  height: 36px;
+  border: 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.table-R1 .topleft {
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+}
+.table-R1 .top {
+  border-bottom: 2px solid;
+}
+.table-R1 .left {
+  border-right: 2px solid;
+}
+
+.table-R2 {
+  /* table-layout: fixed; 테이블 전체사이즈즈
+  width: 160px;
+  height: 160px; */
+  border-collapse: collapse;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.table-R2 td {
+  width: 36px;
+  height: 36px;
+  border: 1px solid;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.table-R2 .right {
+  border-right: none;
+}
+.table-R2 .bottom {
+  border-bottom: none;
+}
+.table-R2 .bottomright {
+  border-bottom: none;
+  border-right: none;
 }/*# sourceMappingURL=study.css.map */
