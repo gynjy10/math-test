@@ -1,0 +1,116 @@
+// 기본 초기화 및 박스모델 설정
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .head-frame {
+    height: 50px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    #logo {
+      display: flex;
+      align-items: center;      
+      #logoimg {
+        width: 40px;
+        height: 30px;
+        margin: 5px;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-size: 17px;
+      // 텍스트 스타일
+      &:not(:has(i)) {
+        color: green;
+        border: solid 2px transparent;
+        border-radius: 8px;
+        padding: 3px;
+        &:hover {
+          color: orangered;
+          border-color: black;          
+        }
+        &:active {
+          color: gray;
+        }
+      }
+      // 아이콘 스타일
+      i {
+        font-size: 24px;
+        color: darkorchid;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hover-icon {
+        display: none;
+      }
+      &:hover {
+        .default-icon {
+          display: none;
+        }
+
+        .hover-icon {
+          display: inline-flex;
+          transform: scale(1.2);
+          color: darkcyan;
+        }
+      }
+      &:active {
+        .default-icon {
+          display: none;
+        }
+        .hover-icon {
+          display: inline-flex;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }  
+    
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+          
+  .foot-frame {
+    height: 50px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    article {
+      color: #6e4403; 
+    }
+  }
+
+  // 임시 간격조절박스 전역에 놓는 의미로...
+  .interval-x {
+    display: inline-block;
+    width: 20px;
+  }
+  .interval-y {
+    display: block;
+    height: 20px;
+  }
+

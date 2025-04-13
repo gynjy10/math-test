@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-frame {
+  height: 50px;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.head-frame #logo {
+  display: flex;
+  align-items: center;
+}
+.head-frame #logo #logoimg {
+  width: 40px;
+  height: 30px;
+  margin: 5px;
+}
+.head-frame a {
+  text-decoration: none;
+  font-size: 17px;
+}
+.head-frame a:not(:has(i)) {
+  color: green;
+  border: solid 2px transparent;
+  border-radius: 8px;
+  padding: 3px;
+}
+.head-frame a:not(:has(i)):hover {
+  color: orangered;
+  border-color: black;
+}
+.head-frame a:not(:has(i)):active {
+  color: gray;
+}
+.head-frame a i {
+  font-size: 24px;
+  color: darkorchid;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-frame a .hover-icon {
+  display: none;
+}
+.head-frame a:hover .default-icon {
+  display: none;
+}
+.head-frame a:hover .hover-icon {
+  display: inline-flex;
+  transform: scale(1.2);
+  color: darkcyan;
+}
+.head-frame a:active .default-icon {
+  display: none;
+}
+.head-frame a:active .hover-icon {
+  display: inline-flex;
+  transform: scale(1.2);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.foot-frame {
+  height: 50px;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+.foot-frame article {
+  color: #6e4403;
+}
+
+.interval-x {
+  display: inline-block;
+  width: 20px;
+}
+
+.interval-y {
+  display: block;
+  height: 20px;
+}/*# sourceMappingURL=frame_o.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>01메뉴</title>
+    <link rel="stylesheet" href="/A_css/frame_o.css">
+    <link rel="stylesheet" href="/A_css/intro.css">
+    <!-- 부트스트랩 아이콘 링크 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <h1 class="lv0_page">
+            <a href="/index.html">Home</a>
+            <a href="/U_study/stydy.html">나의 학습실</a>
+            <a href="/U_usingAI/00AI활용.html">AI 활용</a>
+            <a href="/U_setting/00설정.html"><em>메뉴</em></a>
+            <a href="/U_help/00Q&A.html">Help</a>
+        </h1>
+
+        <div class="intro">
+            <div class="intro_select">
+                [introt선택1]
+            </div>
+            <div class="intro_select">
+                [introt선택2]
+            </div>
+            <div class="intro_select">
+                [introt선택3]
+            </div>
+            <div class="intro_select">
+                [introt선택4]
+            </div>
+            <div class="intro_select">
+                [introt선택5]
+            </div>
+        </div>
+        <br>
+        <span class="interval-y">제작 준비중!!!!!!</span>
+        <span class="interval-y">제작 준비중!!!!!!</span>
+     </main>
+
+    <footer id="footer"></footer>
+    <script>
+        // header.html과 footer.html을 불러오는 js코드 
+        document.addEventListener("DOMContentLoaded", async () => {
+          const headerHTML = await fetch('/A_frame/header.html').then(res => res.text());
+          document.getElementById("header").innerHTML = headerHTML;
+      
+          const footerHTML = await fetch('/A_frame/footer.html').then(res => res.text());
+          document.getElementById("footer").innerHTML = footerHTML;
+        });
+    </script>
+
+    <!-- MathJax for rendering mathematical expressions -->
+    <script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+</html>
